@@ -153,10 +153,10 @@ spec:
             - --cloud-provider=aws
             - --skip-nodes-with-local-storage=false
             - --expander=least-waste
-            - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/terraform-eks-demo
+            - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/eks-landmark
           env:
           - name: AWS_REGION
-            value: us-west-1
+            value: us-east-2
           volumeMounts:
           - name: ssl-certs
             mountPath: /etc/ssl/certs/ca-certificates.crt
