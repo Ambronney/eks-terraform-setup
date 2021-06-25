@@ -3,7 +3,7 @@
 #
 
 variable "cluster-name" {
-  default = "terraform-eks-demo"
+  default = "eks-landmark"
   type    = string
 }
 variable "key_pair_name" {
